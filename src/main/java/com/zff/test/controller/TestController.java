@@ -1,6 +1,5 @@
 package com.zff.test.controller;
 
-import com.pci.hjmos.auth.permission.util.annotation.ResourceCode;
 import com.zff.test.entity.UserRequest;
 import com.zff.test.util.ValidatorUtil;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,17 +7,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
-import javax.validation.Validator;
-
 /**
  * @author ZhouFufeng
  * @since 2019/12/9
  **/
 @RestController
 public class TestController {
-
-    @ResourceCode(value = "role_admin,")
+    
     @GetMapping("/test")
     public String test() {
 
